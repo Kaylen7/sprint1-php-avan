@@ -61,6 +61,10 @@
         }
     }
 
+    section {
+        width: 80%;
+    }
+
 </style>
 <?php
 session_start();
@@ -100,6 +104,19 @@ if($username){
     </fieldset>
     
 </form>
+<section>
+<?php
+echo "<h2>Exercici 2</h2>";
 
+echo "Path: " . __DIR__ . "<br/>";
+echo "Debug: " . (PHP_DEBUG ? "Sí" : "No") . "<br/>";
+echo "Versió de PHP: " . PHP_VERSION . "<br/><br/>";
+
+echo "<hr><h2>Exercici 3</h2>";
+
+
+?>
+
+</section>
 </body>
 </html>
