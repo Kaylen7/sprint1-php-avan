@@ -63,6 +63,9 @@ if (empty($_POST['username']) || empty($_POST['email'])){
     }
 }
 
-echo "<p class='centrat'><a href='" . $_SERVER['HTTP_REFERER'] . "'>← Tornar al formulari</a></p>";
+if (isset($_SERVER['HTTP_REFERER'])){
+    echo "<p class='centrat'><a href='" . $_SERVER['HTTP_REFERER'] . "'>← Tornar al formulari</a></p>";
+}
+
 
 echo "</div></main>";
