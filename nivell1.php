@@ -85,8 +85,8 @@ session_start();
 <h1>Formulari molt important</h1>
 
 <?php
-$username = isset($_SESSION['username']) ?? "";
-$email = isset($_SESSION['email']) ?? "";
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : "";
 
 if($username){
     echo "<h2>👋 Hola, " . $_SESSION['username'] . "!</h2>";
