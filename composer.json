@@ -1,0 +1,11 @@
+{
+    "name": "sdm/sprint1-php-avan",
+    "require": {
+        "league/commonmark": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyProject\\": "src/"
+        }
+    }
+}
