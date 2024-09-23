@@ -113,7 +113,9 @@ echo "<div class='exercici_2'>";
 trait Turbo {
     public function boost(){
         echo "<h3>S'ha iniciat el turbo</h3>";
-        $this->activateTurbo();
+        try {
+            $this->activateTurbo();
+        } catch(Error $e){}
     }
 }
 
