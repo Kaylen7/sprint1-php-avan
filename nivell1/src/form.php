@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     $stylesheet='../css/form.css';
     include("../src/head.php");
     
